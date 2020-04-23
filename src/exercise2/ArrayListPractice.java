@@ -2,6 +2,7 @@ package exercise2;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class ArrayListPractice {
     public static void main(String[] args) {
@@ -20,13 +21,9 @@ public class ArrayListPractice {
 
         System.out.println(sumOfEvens(someNumbers));
 
-        ArrayList<String> someWords = new ArrayList<String>();
+        String string = "I would not, could not, in a box. I would not, could not with a fox. I will not eat them in a house. I will not eat them with a mouse.";
+        ArrayList<String> someWords = new ArrayList<String>(Arrays.asList(string.split(" ")));
 
-        someWords.add("five");
-        someWords.add("slain");
-        someWords.add("mother");
-        someWords.add("definitely");
-        someWords.add("cares");
 
         Scanner input = new Scanner(System.in);
         System.out.println("How many letters do your string/strings have?");
