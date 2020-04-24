@@ -28,6 +28,7 @@ public class ArrayListPractice {
         Scanner input = new Scanner(System.in);
         System.out.println("How many letters do your string/strings have?");
         int searchStringLength = input.nextInt();
+        input.close();
 
         System.out.println(searchByStringLength(someWords, searchStringLength));
 

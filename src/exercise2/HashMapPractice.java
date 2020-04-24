@@ -25,6 +25,7 @@ public class HashMapPractice {
                 input.nextLine();
             }
         } while(!newStudent.equals(""));
+        input.close();
 
         for (Map.Entry<String, Integer> student : students.entrySet()) {
             System.out.println("This student's name is " + student.getKey() + " and their ID is " + student.getValue() + ".");
