@@ -13,7 +13,8 @@ public class CountingCharacters {
         System.out.print("Please enter a string: ");
 
         String userString = input.nextLine().toLowerCase();
-        char[] charactersInString = userString.toCharArray();
+        String onlyAlphabeticCharacters = userString.replaceAll("[^a-z]", "");
+        char[] charactersInString = onlyAlphabeticCharacters.toCharArray();
 
         for (char character : charactersInString) {
             if (instancesOfChar.containsKey(character)) {
